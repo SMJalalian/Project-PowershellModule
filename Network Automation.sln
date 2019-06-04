@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft Automation", "Microsoft Automation\Microsoft Automation.csproj", "{71000B5D-CADC-4A99-A3E6-03163C9A8B0D}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71000B5D-CADC-4A99-A3E6-03163C9A8B0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71000B5D-CADC-4A99-A3E6-03163C9A8B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71000B5D-CADC-4A99-A3E6-03163C9A8B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71000B5D-CADC-4A99-A3E6-03163C9A8B0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -11,9 +23,12 @@ Global
 		SolutionGuid = {E61F7F2D-20A8-40D9-BE41-2B587407F206}
 	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 1
+		SccNumberOfProjects = 2
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://smjalalian.visualstudio.com/
 		SccLocalPath0 = .
+		SccProjectUniqueName1 = Microsoft\u0020Automation\\Microsoft\u0020Automation.csproj
+		SccProjectName1 = Microsoft\u0020Automation
+		SccLocalPath1 = Microsoft\u0020Automation
 	EndGlobalSection
 EndGlobal
