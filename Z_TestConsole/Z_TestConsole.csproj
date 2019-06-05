@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup Label="Globals">
     <SccProjectName>SAK</SccProjectName>
@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
+    <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
@@ -18,10 +19,6 @@
     <PackageReference Include="System.DirectoryServices" Version="4.5.0" />
     <PackageReference Include="System.DirectoryServices.AccountManagement" Version="4.5.0" />
     <PackageReference Include="System.Management.Automation" Version="6.2.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Tools\Tools.csproj" />
   </ItemGroup>
 
 </Project>

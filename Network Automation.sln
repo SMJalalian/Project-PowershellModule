@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft", "Microsoft\Microsoft.csproj", "{AD3B295D-0085-4C50-9D79-1FA0AA04143D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cisco", "Cisco\Cisco.csproj", "{38834153-6486-4F06-B3F9-C22CC3A25286}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cisco", "Cisco\Cisco.csproj", "{38834153-6486-4F06-B3F9-C22CC3A25286}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools", "Tools\Tools.csproj", "{BC09A341-C2CB-41C4-B343-EC846F994AAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z_TestConsole", "Z_TestConsole\Z_TestConsole.csproj", "{7380500A-F445-4278-A30E-A900A84E6989}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{38834153-6486-4F06-B3F9-C22CC3A25286}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38834153-6486-4F06-B3F9-C22CC3A25286}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38834153-6486-4F06-B3F9-C22CC3A25286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC09A341-C2CB-41C4-B343-EC846F994AAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC09A341-C2CB-41C4-B343-EC846F994AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC09A341-C2CB-41C4-B343-EC846F994AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC09A341-C2CB-41C4-B343-EC846F994AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7380500A-F445-4278-A30E-A900A84E6989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7380500A-F445-4278-A30E-A900A84E6989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7380500A-F445-4278-A30E-A900A84E6989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7380500A-F445-4278-A30E-A900A84E6989}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -29,7 +41,7 @@ Global
 		SolutionGuid = {5A384E80-6159-4268-96AA-A3DB474BFE62}
 	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
+		SccNumberOfProjects = 5
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://smjalalian.visualstudio.com/
 		SccLocalPath0 = .
@@ -39,5 +51,11 @@ Global
 		SccProjectUniqueName2 = Cisco\\Cisco.csproj
 		SccProjectName2 = Cisco
 		SccLocalPath2 = Cisco
+		SccProjectUniqueName3 = Tools\\Tools.csproj
+		SccProjectName3 = Tools
+		SccLocalPath3 = Tools
+		SccProjectUniqueName4 = Z_TestConsole\\Z_TestConsole.csproj
+		SccProjectName4 = Z_TestConsole
+		SccLocalPath4 = Z_TestConsole
 	EndGlobalSection
 EndGlobal
