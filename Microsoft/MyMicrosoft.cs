@@ -45,23 +45,23 @@ namespace Microsoft
         public string Type { get; set; }        
         public string Description { get; set; }
 
-        public List<string[]> SplitLogMessage (EventLogEntry log)
-        {
-            List<string[]> result = new List<string[]>();
-            StringReader strReader = new StringReader(log.Message.ToString());
-            while (true)
-            {
-                string aLine = strReader.ReadLine();
-                if (aLine != null)
-                {
-                    string[] parts = aLine.Split(new string[] { "\t" }, StringSplitOptions.RemoveEmptyEntries);
-                    result.Add(parts);
-                }
-                else
-                    break;
-            }
-            return result;
-        }
+        //public List<string[]> SplitLogMessage (EventLogEntry log)
+        //{
+        //    List<string[]> result = new List<string[]>();
+        //    StringReader strReader = new StringReader(log.Message.ToString());
+        //    while (true)
+        //    {
+        //        string aLine = strReader.ReadLine();
+        //        if (aLine != null)
+        //        {
+        //            string[] parts = aLine.Split(new string[] { "\t" }, StringSplitOptions.RemoveEmptyEntries);
+        //            result.Add(parts);
+        //        }
+        //        else
+        //            break;
+        //    }
+        //    return result;
+        //}
     }
 
     public class PSGroupEventLog : PSEventLog
