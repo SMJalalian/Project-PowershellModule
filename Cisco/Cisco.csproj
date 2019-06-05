@@ -9,6 +9,11 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>Cisco Automation</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>C:\program files\PowerShell\6\Modules\Network Automation</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

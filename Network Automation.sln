@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft", "Microsoft\Micr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cisco", "Cisco\Cisco.csproj", "{38834153-6486-4F06-B3F9-C22CC3A25286}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools", "Tools\Tools.csproj", "{BC09A341-C2CB-41C4-B343-EC846F994AAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tools", "Tools\Tools.csproj", "{BC09A341-C2CB-41C4-B343-EC846F994AAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Z_TestConsole", "Z_TestConsole\Z_TestConsole.csproj", "{7380500A-F445-4278-A30E-A900A84E6989}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Z_TestConsole", "Z_TestConsole\Z_TestConsole.csproj", "{7380500A-F445-4278-A30E-A900A84E6989}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
