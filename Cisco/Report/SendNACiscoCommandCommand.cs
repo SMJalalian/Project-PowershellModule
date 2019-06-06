@@ -8,7 +8,7 @@ using System.Threading;
 namespace Cisco.Report
 {
     [Cmdlet(VerbsCommunications.Send,"NACiscoCommand")]
-    public class RunNACiscoCommandCommand : MyReport
+    public class SendNACiscoCommandCommand : MyReport
     {       
         [Parameter(Position = 0, Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true)]
         public string DeviceName { get; set; }

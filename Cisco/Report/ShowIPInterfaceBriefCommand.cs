@@ -5,7 +5,7 @@ using System.IO;
 
 namespace Cisco.Report
 {
-    [Cmdlet(VerbsCommon.Show, "CiscoIPInterfaceBrief")]
+    [Cmdlet(VerbsCommon.Show, "NACiscoIPInterfaceBrief")]
     public class ShowIPInterfaceBriefCommand : MyReport
     {
         [Parameter(Position = 0, Mandatory = true, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true)]
