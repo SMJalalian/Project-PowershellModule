@@ -9,7 +9,7 @@ namespace Z_TestConsole
             System.IO.File.Copy(@"C:\Workspaces\DevOps\SMJalalian\Network Automation\Manifest Module\Network Automation.psd1",
                                 @"C:\Program Files\PowerShell\6\Modules\Network Automation\Network Automation.psd1", true);
             Console.WriteLine("Hello World!");
-            Console.ReadLine();
+            //Console.ReadLine();
         }
     }
 }
