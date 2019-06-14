@@ -9,10 +9,16 @@ namespace Cisco.Report
     {
         public string LogService { get; private set; } = "Report";
 
-        public List<PSObject> FillPSObjectOutput(StringReader output, List<HeaderDefinition> allAttribs)
+        public List<PSObject> FillPSObjectOutput(StringReader output, List<HeaderDefinition> allAttribs,int LineToRemove = 0)
         {
-            List<PSObject> result = new List<PSObject>();
-            string HeadLine = output.ReadLine();
+            string HeadLine = "";
+            List<PSObject> result = new List<PSObject>();            
+            for (int i = 0; i < LineToRemove ; i++)
+            {
+                output.ReadLine();
+            }
+
+            HeadLine = output.ReadLine();
             //string[] str = HeadLine.Split(new char[0]);
             //int j = 0;
             foreach (HeaderDefinition item in allAttribs)

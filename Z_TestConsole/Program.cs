@@ -20,19 +20,15 @@ namespace Z_TestConsole
             SecPass.AppendChar('n');
             PSCredential Cred = new PSCredential("admin", SecPass);
 
-            SendNACiscoCommandCommand Y = new SendNACiscoCommandCommand();
-            string Output = Y.RunCiscoCommand("192.168.100.2","Telnet","sh arp",Cred,2000);
-            Console.WriteLine(Output);
+            //SendNACiscoCommandCommand Y = new SendNACiscoCommandCommand();
+            //string Output = Y.RunCiscoCommand("192.168.100.2","Telnet", "show cdp neighbors", Cred);
+            //Console.WriteLine(Output);
 
+            //ShowCDPNeighborsCommand X = new ShowCDPNeighborsCommand();
+            //X.ShowCDPNeighbors("192.168.100.2", "Telnet", Cred);
 
-            ShowIPInterfaceBriefCommand X = new ShowIPInterfaceBriefCommand();
-            X.ShowIPInterfaceBrief("192.168.100.2", "Telnet", Cred);
-
-            ShowARPCommand Z = new ShowARPCommand();
-            Z.ShowARP("192.168.100.2", "Telnet", Cred);
-
-
-
+            //ShowARPCommand Z = new ShowARPCommand();
+            //Z.ShowARP("192.168.100.2", "Telnet", Cred);
 
             //**********************************************************************************************************************
             Console.WriteLine("Hello World!");            
