@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Security;
+using Cisco.Report;
+using System.Management.Automation;
 
 namespace Z_TestConsole
 {
@@ -8,8 +11,31 @@ namespace Z_TestConsole
         {
             System.IO.File.Copy(@"C:\Workspaces\DevOps\SMJalalian\Network Automation\Z_Manifest Module\Network Automation.psd1",
                                 @"C:\Program Files\PowerShell\6\Modules\Network Automation\Network Automation.psd1", true);
-            Console.WriteLine("Hello World!");
-            //Console.ReadLine();
+            //**********************************************************************************************************************
+            SecureString SecPass = new SecureString();
+            SecPass.AppendChar('a');
+            SecPass.AppendChar('d');
+            SecPass.AppendChar('m');
+            SecPass.AppendChar('i');
+            SecPass.AppendChar('n');
+            PSCredential Cred = new PSCredential("admin", SecPass);
+
+            SendNACiscoCommandCommand Y = new SendNACiscoCommandCommand();
+            string Output = Y.RunCiscoCommand("192.168.100.2","Telnet","sh arp",Cred,2000);
+            Console.WriteLine(Output);
+
+
+            ShowIPInterfaceBriefCommand X = new ShowIPInterfaceBriefCommand();
+            X.ShowIPInterfaceBrief("192.168.100.2", "Telnet", Cred);
+
+            ShowARPCommand Z = new ShowARPCommand();
+            Z.ShowARP("192.168.100.2", "Telnet", Cred);
+
+
+
+
+            //**********************************************************************************************************************
+            Console.WriteLine("Hello World!");            
         }
     }
 }

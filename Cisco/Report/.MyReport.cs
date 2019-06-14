@@ -13,16 +13,18 @@ namespace Cisco.Report
         {
             List<PSObject> result = new List<PSObject>();
             string HeadLine = output.ReadLine();
-            string[] str = HeadLine.Split(new char[0]);
-            int j = 0;
-            foreach (string item in str)
+            //string[] str = HeadLine.Split(new char[0]);
+            //int j = 0;
+            foreach (HeaderDefinition item in allAttribs)
             {
-                if (item != "")
-                {
-                    allAttribs[j].Start = HeadLine.IndexOf(item);
-                    allAttribs[j].End = allAttribs[j].Start + item.Length - 1;
-                    j++;
-                }
+                item.Start = HeadLine.IndexOf(item.Property);
+                item.End = item.Start + item.Property.Length - 1;
+                //if (item != "")
+                //{
+                //    allAttribs[j].Start = HeadLine.IndexOf(item);
+                //    allAttribs[j].End = allAttribs[j].Start + item.Length - 1;
+                //    j++;
+                //}
             }
             while (true)
             {
@@ -37,13 +39,13 @@ namespace Cisco.Report
                             data = dataLine.Substring(allAttribs[i].Start, (dataLine.Length - allAttribs[i].Start));
                         else
                             data = dataLine.Substring(allAttribs[i].Start, (allAttribs[i + 1].Start - (allAttribs[i].Start) - 1));
+                        data = data.TrimStart();
                         data = data.TrimEnd();
                         if (data.Length == 0)
                             psTemp.Members.Add(new PSNoteProperty(allAttribs[i].Property, null));
                         else
                             psTemp.Members.Add(new PSNoteProperty(allAttribs[i].Property, data));
                     }
-
                     result.Add(psTemp);
                 }
                 else
