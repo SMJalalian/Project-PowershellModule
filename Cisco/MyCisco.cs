@@ -80,7 +80,7 @@ namespace Cisco
                             }
                         }
                         temp = "";
-                        telnetClient.WriteLine(" ");
+                        telnetClient.Write(" ");
                         Thread.Sleep(delay);
                         temp = telnetClient.Read();
                         if (temp.Contains('\b'))
