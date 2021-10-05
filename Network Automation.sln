@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28922.388
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft", "Microsoft\Microsoft.csproj", "{AD3B295D-0085-4C50-9D79-1FA0AA04143D}"
 EndProject
@@ -10,8 +10,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tools", "Tools\Tools.csproj", "{BC09A341-C2CB-41C4-B343-EC846F994AAD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Z_TestConsole", "Z_TestConsole\Z_TestConsole.csproj", "{7380500A-F445-4278-A30E-A900A84E6989}"
-EndProject
-Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "Z_Manifest Module", "Z_Manifest Module\Z_Manifest Module.pssproj", "{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,36 +33,11 @@ Global
 		{7380500A-F445-4278-A30E-A900A84E6989}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7380500A-F445-4278-A30E-A900A84E6989}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7380500A-F445-4278-A30E-A900A84E6989}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5A384E80-6159-4268-96AA-A3DB474BFE62}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 6
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://smjalalian.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Microsoft\\Microsoft.csproj
-		SccProjectName1 = Microsoft
-		SccLocalPath1 = Microsoft
-		SccProjectUniqueName2 = Cisco\\Cisco.csproj
-		SccProjectName2 = Cisco
-		SccLocalPath2 = Cisco
-		SccProjectUniqueName3 = Tools\\Tools.csproj
-		SccProjectName3 = Tools
-		SccLocalPath3 = Tools
-		SccProjectUniqueName4 = Z_TestConsole\\Z_TestConsole.csproj
-		SccProjectName4 = Z_TestConsole
-		SccLocalPath4 = Z_TestConsole
-		SccProjectUniqueName5 = Z_Manifest\u0020Module\\Z_Manifest\u0020Module.pssproj
-		SccProjectName5 = Z_Manifest\u0020Module
-		SccLocalPath5 = Z_Manifest\u0020Module
 	EndGlobalSection
 EndGlobal
